@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "thewatchoftime",
+	"version": "${version}",
+	"name": "The Watch of Time",
+	"description": "Adds an item called the Time Watch. It allows you to freeze and unfreeze time in a cool way.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/the-watch-of-time/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"xreverseflash.thewatchoftime.TheWatchOfTime"
+		],
+		"client": [
+			"xreverseflash.thewatchoftime.TheWatchOfTimeClient"
+		]
+	},
+	"mixins": [
+      "thewatchoftime.mixins.json",
+		{
+			"config": "thewatchoftime.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.1",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
