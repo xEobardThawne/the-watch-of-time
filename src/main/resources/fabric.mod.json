@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
 	"id": "thewatchoftime",
-	"version": "${version}",
+	"version": "1.0.1",
 	"name": "The Watch of Time",
 	"description": "Adds an item called the Time Watch. It allows you to freeze and unfreeze time in a cool way.",
 	"authors": [
-		"Me!"
+		"xReverse_F1ash"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -23,11 +23,6 @@
 		]
 	},
 	"mixins": [
-      "thewatchoftime.mixins.json",
-		{
-			"config": "thewatchoftime.client.mixins.json",
-			"environment": "client"
-		}
 	],
 	"depends": {
 		"fabricloader": ">=0.15.1",
