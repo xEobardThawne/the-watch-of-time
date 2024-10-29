@@ -8,13 +8,17 @@ import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class TheWatchOfTime implements ModInitializer {
 
+	public static final Identifier time_watch_id = Identifier.of("thewatchoftime", "time_watch");
+	public static final RegistryKey<Item> time_watch_key = RegistryKey.of(RegistryKeys.ITEM, time_watch_id);
 	public static final TimeWatchItem TIME_WATCH =
-			Registry.register(Registries.ITEM, Identifier.of("thewatchoftime", "time_watch"),
-					new TimeWatchItem(new Item.Settings().maxCount(1)));
+			Registry.register(Registries.ITEM, time_watch_key,
+					new TimeWatchItem(new Item.Settings().maxCount(1).registryKey(time_watch_key)));
 	
 	@Override
 	public void onInitialize() {
