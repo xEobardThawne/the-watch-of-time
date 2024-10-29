@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "thewatchoftime",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"name": "The Watch of Time",
 	"description": "Adds an item called the Time Watch. It allows you to freeze and unfreeze time in a cool way.",
 	"authors": [

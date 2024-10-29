@@ -18,7 +18,7 @@ public class TheWatchOfTime implements ModInitializer {
 	
 	@Override
 	public void onInitialize() {
-
+		// Add item before bucket in the tools category in the creative menu
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS)
 				.register(group -> group.addBefore(Items.BUCKET, TIME_WATCH));
 	}
